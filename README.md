@@ -76,13 +76,7 @@ A Python-based GUI application to securely hide text inside videos using AES enc
 
 This project is licensed under the MIT License. See `LICENSE` for details.
 
----
 
-## Screenshots
-
-*(You can add screenshots of your GUI here)*
-
----
 
 ## Acknowledgments
 
