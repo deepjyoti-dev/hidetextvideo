@@ -1,86 +1,93 @@
-# hidetextvideo
-# Optimized Secure Video Steganography GUI
+🎥 HideTextVideo
 
-A Python-based GUI application to securely hide text inside videos using AES encryption and HMAC verification. This project demonstrates video steganography optimized for speed and security, hiding data in the top-left 100x100 pixel area of video frames.
+Optimized Secure Video Steganography GUI
 
----
+A Python-based GUI application to securely hide text inside videos using AES encryption and HMAC verification.
+Optimized for speed and security, this project hides data in the top-left 100x100 pixel area of video frames.
 
-## Features
+✨ Features
 
-- **Secure Encryption:** Uses AES-128 in CBC mode to encrypt the text with a password.
-- **Data Integrity:** HMAC-SHA256 ensures the hidden text is not tampered with.
-- **Video Support:** Works with `.mp4`, `.avi`, `.mov`, and other common video formats.
-- **Optimized Hiding:** Hides encrypted text only in the top-left 100x100 pixels to reduce processing time.
-- **GUI Interface:** Simple and user-friendly interface using Tkinter.
+🔒 Secure Encryption: AES-128 in CBC mode with password protection.
 
----
+🛡️ Data Integrity: HMAC-SHA256 ensures hidden text is not tampered with.
 
-## Installation
+🎞️ Video Support: Works with .mp4, .avi, .mov, and other common formats.
 
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/yourusername/optimized-video-steganography.git
-    cd optimized-video-steganography
-    ```
+⚡ Optimized Hiding: Only top-left 100x100 pixels used to reduce processing time.
 
-2. Install dependencies:
-    ```bash
-    pip install opencv-python cryptography numpy
-    ```
+🖥️ GUI Interface: User-friendly GUI built with Tkinter.
 
-3. Run the application:
-    ```bash
-    python stego_gui.py
-    ```
+🧩 Installation
 
----
+Clone the repository:
 
-## Usage
-
-### Hide Text in Video
-1. Click **"Hide Text in Video"**.
-2. Select the video file.
-3. Enter the text you want to hide.
-4. Set a password for encryption.
-5. Specify a name for the stego video.
-6. The application will create a video with the hidden, encrypted text.
-
-### Extract Text from Video
-1. Click **"Extract Text from Video"**.
-2. Select the stego video file.
-3. Enter the correct password.
-4. If successful, the hidden text will be displayed.
-
----
-
-## Technical Details
-
-- **Encryption:** AES-128 CBC with PKCS7 padding.
-- **HMAC:** SHA-256 to verify integrity.
-- **Steganography:** LSB (Least Significant Bit) method applied to RGB values.
-- **Optimization:** Only hides/extracts text in the top-left 100x100 pixels to reduce processing time and memory usage.
-
----
-
-## Notes
-
-- Ensure the video is not too short; large text may not fit in smaller videos.
-- If extraction fails, check:
-  - Correct password was used.
-  - Video is not corrupted.
-  - Video has enough capacity to store hidden text.
-
----
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
+git clone https://github.com/yourusername/optimized-video-steganography.git
+cd optimized-video-steganography
 
 
+Install dependencies:
 
-## Acknowledgments
+pip install opencv-python cryptography numpy
 
-- OpenCV for video processing.
-- Cryptography library for secure encryption.
-- Tkinter for GUI.
 
+Run the application:
+
+python stego_gui.py
+
+🛠️ Usage
+Hide Text in Video
+
+Click "Hide Text in Video"
+
+Select a video file
+
+Enter the text to hide
+
+Set a password
+
+Specify a name for the stego video
+
+The application will generate a video with hidden, encrypted text
+
+Extract Text from Video
+
+Click "Extract Text from Video"
+
+Select the stego video
+
+Enter the password
+
+If successful, hidden text is displayed
+
+🧠 Technical Details
+
+Encryption: AES-128 CBC with PKCS7 padding
+
+HMAC: SHA-256 for integrity verification
+
+Steganography: LSB (Least Significant Bit) applied to RGB values
+
+Optimization: Hiding/extracting text only in top-left 100x100 pixels for faster processing
+
+⚠️ Notes
+
+Ensure the video is long enough; large text may not fit in short videos
+
+Extraction may fail if:
+
+Incorrect password
+
+Video is corrupted
+
+Video has insufficient capacity
+
+🏷️ Tags
+
+#python #tkinter #opencv #steganography #aes #hmac #videoprocessing #gui
+
+🧑‍💻 Author
+
+Deepjyoti Das
+🔗 [LinkedIn](https://www.linkedin.com/in/deepjyotidas1)
+
+💻 GitHub
